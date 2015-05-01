@@ -18,4 +18,5 @@ npm-debug.log
 testem.log
 .ideabuild
 .idea
-build/
+/build
+*.module_cache*
