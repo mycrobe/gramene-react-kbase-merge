@@ -1,4 +1,4 @@
-require('./vis.js');
+var Vis = require('./vis.jsx');
 
 function uuid () {
 
@@ -10,7 +10,7 @@ function uuid () {
     return 'uuid-' + result;
 }
 
-NAMEOFYOURVISTHINGY = React.createClass(
+var NAMEOFYOURVISTHINGY = React.createClass(
     {
 
         getInitialState : function() {
@@ -75,3 +75,5 @@ NAMEOFYOURVISTHINGY = React.createClass(
         },
     }
 );
+
+module.exports = NAMEOFYOURVISTHINGY;

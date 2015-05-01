@@ -56,5 +56,5 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask('default', ['browserify:dev', 'watch']);
-  grunt.registerTask('package', ['browserify:production']);
+  grunt.registerTask('package', ['requirejs', 'browserify:production']);
 };

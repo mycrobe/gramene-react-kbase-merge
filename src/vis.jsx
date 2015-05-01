@@ -1,7 +1,8 @@
-require('./geometry/geometry_point.js');
-require('./geometry/geometry_rectangle.js');
-require('./geometry/geometry_size.js');
-require('./RGBColor.js');
+var React = require('react');
+var Point = require('./geometry/geometry_point.js');
+var Rectangle = require('./geometry/geometry_rectangle.js');
+var Size = require('./geometry/geometry_size.js');
+var RGBColor = require('./RGBColor.jsx');
 
 function uuid () {
 
@@ -13,7 +14,7 @@ function uuid () {
     return 'uuid-' + result;
 }
 
-Vis = React.createClass(
+var Vis = React.createClass(
     {
 
         getInitialState : function() {
@@ -875,3 +876,5 @@ this.state.yScale = d3.scale.linear().domain([0,100]).range([this.chartBounds().
         },
     }
 );
+
+module.exports = Vis;

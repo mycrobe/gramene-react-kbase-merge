@@ -1,4 +1,6 @@
-AccordionPanel = React.createClass(
+var React = require('react');
+
+var AccordionPanel = React.createClass(
     {
 
 
@@ -68,3 +70,5 @@ console.log("ACC PANIC", this.state, this.props);
         }
     }
 );
+
+module.exports = AccordionPanel;

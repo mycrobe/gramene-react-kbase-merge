@@ -1,6 +1,6 @@
-require('./accordionPanel') ;
+var AccordionPanel = require('./accordionPanel') ;
 
-Accordion = React.createClass(
+var Accordion = React.createClass(
     {
 
         getInitialState : function() {
@@ -52,3 +52,5 @@ console.log("ACC", this.props.panels);
         }
     }
 );
+
+module.exports = Accordion;

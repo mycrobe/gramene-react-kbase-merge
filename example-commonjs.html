@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<!--
+    The magic incantation to compile the kbase widgets is, from within src/kbsrc
+    r.js -o paths.requireLib=../../../ext/requirejs/2.1.9/require mainConfigFile=kbpaths.js name=all include=requireLib out=kbase.js baseUrl=widgets
+
+-->
+
+<html>
+
+<head>
+
+    <link href="ext/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="ext/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div>
+    Simple demonstrations of visualization widgets. Mouse over the charts, they're all interactive.<br>
+    The force directed graph has draggable nodes, and they can be selected by drawing on the box.
+</div>
+
+<div id="examples"></div>
+
+
+<script src='build/kbase.js'></script>
+<script src='build/bundle.js'></script>
+</body>
+
+</html>

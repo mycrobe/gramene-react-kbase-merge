@@ -1,8 +1,6 @@
-//require('./kbsrc/kbase.js')
-require('./accordion')
-require('./vis')
-require('./VisContainer')
-//require('./Barchart')
-//require('./Linechart')
-//require('./Piechart')
-//require('./Treechart')
+'use strict';
+
+var React = require('react');
+var Examples = React.createFactory(require('./examples/examples.jsx'));
+
+React.render(new Examples(), document.getElementById('examples'));

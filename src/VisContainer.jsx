@@ -1,6 +1,7 @@
+var React = require('react');
+var $ = require('jquery');
 
-
-VisContainer = React.createClass(
+var VisContainer = React.createClass(
     {
 
         render : function() {
@@ -25,7 +26,7 @@ VisContainer = React.createClass(
 
             this.attachJQ();
 
-        },
+        }
     }
 );
 
@@ -45,10 +46,10 @@ var containers = {
     'Venndiagram'       : 'kbaseVenndiagram',
 };
 
-for (container in containers) {
+for (var container in containers) {
     var kbwidget = containers[container];
 
-    window[container] = React.createClass(
+    module.exports[container] = React.createClass(
         {
             kbwidget : kbwidget,
 
