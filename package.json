@@ -1,0 +1,41 @@
+{
+  "name": "gramene-react-kbase-merge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mycrobe/gramene-react-kbase-merge.git"
+  },
+  "author": "thomasoniii",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mycrobe/gramene-react-kbase-merge/issues"
+  },
+  "homepage": "https://github.com/mycrobe/gramene-react-kbase-merge",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^3.7.0",
+    "grunt-contrib-requirejs": "^0.4.4",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-jsxhint": "^0.6.0",
+    "jit-grunt": "^0.9.1",
+    "react-tools": "^0.13.2",
+    "reactify": "^1.1.0"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.4",
+    "bowser": "^0.7.2",
+    "d3": "^3.5.5",
+    "font-awesome": "^4.3.0",
+    "handlebars": "^3.0.3",
+    "jquery": "^2.1.4",
+    "jquery.cookie": "^1.4.1",
+    "react": "^0.13.2",
+    "requirejs": "^2.1.17",
+    "underscore": "^1.8.3"
+  }
+}
