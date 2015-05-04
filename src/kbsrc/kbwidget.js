@@ -20,31 +20,8 @@
  */
 
 define('kbwidget', ['jquery', 'handlebars'], function ($) {
+        var KBase;
 
-    $(document).on(
-        'libsLoaded.kbase',
-        function () {
-            $('[data-kbwidget]').each(function(idx, val) {
-                var $val = $(val);
-                var widget = $val.attr('data-kbwidget');
-
-                var options = $val.text();
-
-                $val.empty();
-                if (options != undefined) {
-                    options = JSON.parse(options);
-                }
-                else {
-                    options = {};
-                }
-
-                $val[widget](options);
-
-            });
-        }
-    );
-
-    var KBase;
     var ucfirst = function(string) {
         if (string != undefined && string.length) {
             return string.charAt(0).toUpperCase() + string.slice(1);
