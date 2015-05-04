@@ -1,5 +1,6 @@
 var React = require('react');
-var $ = require('jquery');
+//var $ = require('jquery');
+var test = require('./umd/kbsrc/widgets/vis/kbaseLinechart');
 
 var VisContainer = React.createClass(
     {

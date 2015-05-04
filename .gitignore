@@ -19,3 +19,4 @@ testem.log
 .ideabuild
 .idea
 /build
+/src/umd

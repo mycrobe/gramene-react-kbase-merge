@@ -970,4 +970,6 @@ define('kbwidget', ['jquery', 'handlebars'], function ($) {
 
         }
     );
+
+    return $;
 });

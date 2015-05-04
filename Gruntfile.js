@@ -17,6 +17,7 @@ module.exports = function (grunt) {
             requireLib: '../../../node_modules/requirejs/require'
           },
           include: ['requireLib'],
+          optimize: 'none',
           baseUrl: "src/kbsrc/widgets",
           mainConfigFile: "src/kbsrc/kbpaths.js",
           name: "all",
@@ -31,14 +32,14 @@ module.exports = function (grunt) {
           browserifyOptions: {
             debug: true
           },
-          transform: ['reactify']
+          transform: ['reactify', 'deamdify']
         },
         src: 'src/main.js',
         dest: 'build/bundle.js'
       },
       production: {
         options: {
-          transform: ['reactify', ['uglifyify', {global: true}]],
+          transform: ['reactify', 'deamdify', ['uglifyify', {global: true}]],
           browserifyOptions: {
             debug: false
           }
